@@ -1,7 +1,35 @@
 {
   "repository": {
-    "comment": {
-      "patterns": []
-    }
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.block.swift",
+					"begin": "/\\*",
+					"beginCaptures": {"0": {"name": "punctuation.definition.comment.begin.swift"}},
+					"end": "\\*/",
+					"endCaptures": {"0": {"name": "punctuation.definition.comment.end.swift"}},
+					"patterns": [{"include": "#comment"}]
+				},
+				{
+					"begin": "(^[ \\t]+)?(?=//)",
+					"beginCaptures": {"1": {"name": "punctuation.whitespace.comment.leading.swift"}},
+					"end": "(?!\\G)",
+					"patterns": [
+						{
+							"name": "comment.line.double-slash.swift",
+							"begin": "//",
+							"beginCaptures": {"0": {"name": "punctuation.definition.comment.swift"}},
+							"end": "\\n",
+							"patterns": [
+								{
+									"name": "punctuation.separator.continuation.swift",
+									"match": "(?>\\\\\\s*\\n)"
+								}
+							]
+						}
+					]
+				},
+			]
+		}
   }
 }

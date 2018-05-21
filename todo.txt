@@ -1,4 +1,4 @@
-Configure comments
+x Configure comments
+x Replace "EXTENSION"
+xReplace "LANGUAGE"
 Add punctuation
-Replace "EXTENSION"
-Replace "LANGUAGE"
