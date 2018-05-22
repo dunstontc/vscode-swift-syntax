@@ -1,5 +1,21 @@
 {
   "repository": {
+    "escaped-char": {
+			"patterns": [
+				{
+					"name": "constant.character.escape.swift",
+					"match": "\\\\[0\\\\tnr\"']"
+				},
+				{
+					"name": "constant.character.escape.swift",
+					"match": "\\\\(x\\h{2}|u\\h{4}|U\\h{8})"
+				},
+				{
+					"name": "invalid.illegal.constant.character.escape.swift",
+					"match": "\\\\[^uxU]"
+				}
+			]
+		},
     "string": {
       "patterns": [
         {
@@ -11,8 +27,23 @@
           "name": "string.quoted.double.swift",
           "begin": "\"",
           "end": "\"",
+          "patterns": [
+            {
+              "begin": "\\\\\\(",
+              "end": "\\)",
+              "beginCaptures": {"0": {"name": "punctuation.section.embedded.begin.swift"}},
+              "endCaptures": {"0": {"name": "punctuation.section.embedded.end.swift"}},
+              "patterns": [
+                {
+                  "name": "punctuation.section.embedded.swift",
+                  "match": "."
+                }
+              ]
+            },
+            {"include": "#escaped-char"},
+          ]
         },
       ]
-    }
+    },
   }
 }

@@ -2,3 +2,4 @@ x Configure comments
 x Replace "EXTENSION"
 xReplace "LANGUAGE"
 Add punctuation
+2018-05-21 Properly define @types.

@@ -1,7 +1,20 @@
 {
   "repository": {
     "storage": {
-      "patterns": []
+      "patterns": [
+        // {
+        //   "name": "storage.type.swift",
+        //   "match": "\\b(class|struct|enum|extension|protocol|let|var|typealias|precedencegroup)\\b"
+        // },
+        {
+          "name": "storage.type.swift",
+          "match": "\\b(class|enum|extension|func|let|protocol|struct|var)\\b"
+        },
+        {
+          "name": "storage.type.swift",
+          "match": "\\b(typealias|precedencegroup)\\b"
+        },
+      ]
     }
   }
 }

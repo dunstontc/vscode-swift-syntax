@@ -1,7 +1,12 @@
 {
   "repository": {
     "entity": {
-      "patterns": []
+      "patterns": [
+        {
+          "match": "([a-zA-RT-Z][a-zA-Z_]+)(?=[(])",
+          "name": "entity.name.function.swift",
+        },
+      ]
     }
   }
 }
