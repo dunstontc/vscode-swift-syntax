@@ -1,7 +1,16 @@
 {
   "repository": {
     "operator": {
-      "patterns": []
+      "patterns": [
+        // {
+        //   "name": "keyword.operator.swift",
+        //   "match": "[\\/=\\-+!*%<>&|^~,\\?:\\[\\]]"
+        // },
+        {
+          "name": "keyword.operator.swift",
+          "match": "\\B[\\/=\\-+!*%<>&|^~\\?:\\[\\]]\\B"
+        },
+      ]
     }
   }
 }

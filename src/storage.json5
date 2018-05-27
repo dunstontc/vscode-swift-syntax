@@ -4,11 +4,15 @@
       "patterns": [
         // {
         //   "name": "storage.type.swift",
-        //   "match": "\\b(class|struct|enum|extension|protocol|let|var|typealias|precedencegroup)\\b"
+          // "match": "\\b(class|struct|enum|extension|protocol|let|var|typealias|precedencegroup)\\b"
         // },
         {
+          "name": "storage.modifier.swift",
+          "match": "\\b(final|internal|private|fileprivate|public|open|static|required|convenience)\\b"
+        },
+        {
           "name": "storage.type.swift",
-          "match": "\\b(class|enum|extension|func|let|protocol|struct|var)\\b"
+          "match": "\\b(class|enum|extension|let|protocol|precedencegroup|struct|typealias|var)\\b"
         },
         {
           "name": "storage.type.swift",

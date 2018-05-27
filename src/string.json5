@@ -35,7 +35,7 @@
               "endCaptures": {"0": {"name": "punctuation.section.embedded.end.swift"}},
               "patterns": [
                 {
-                  "name": "punctuation.section.embedded.swift",
+                  "name": "meta.embedded.line.swift",
                   "match": "."
                 }
               ]

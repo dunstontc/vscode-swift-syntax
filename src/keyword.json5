@@ -1,7 +1,16 @@
 {
   "repository": {
     "keyword": {
-      "patterns": []
+      "patterns": [
+        {
+          "name": "keyword.statement.swift",
+          "match": "\\b(break|case|continue|catch|do|default|defer|else|fallthrough|for|guard|if|in|repeat|return|switch|try|where|while)\\b"
+        },
+        {
+          "name": "keyword.declaration.swift",
+          "match": "\\b(deinit|import|init|subscript)\\b"
+        },
+      ]
     }
   }
 }
