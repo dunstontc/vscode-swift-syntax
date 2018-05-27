@@ -2,7 +2,7 @@
     "name": "vscode-swift-syntax",
     "displayName": "vscode-swift-syntax",
     "description": "Syntax highlighting for Swift files. (WIP)",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "dunstontc",
     "repository": {
         "type": "git",
@@ -34,6 +34,7 @@
         "color": "#1e1e1e",
         "theme": "dark"
     },
+    "icon": "assets/swift.png",
     "devDependencies": {
         "gulp": "^3.9.1",
         "gulp-json5-to-json": "^0.2.1",
