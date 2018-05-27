@@ -1,0 +1,43 @@
+{
+  "repository": {
+    "entity": {
+      "patterns": [
+        {
+          "match": "([a-zA-Z!][a-zA-Z_]+)(?=[(])",
+          "name": "entity.name.function.swift",
+        },
+        {
+          "match": "(?<=protocol\\s)([a-zA-Z][a-zA-Z_]+)",
+          "captures": {"1": {"name": "entity.name.function.protocol.swift"}},
+        },
+        {
+          "match": "(?<=extension\\s)([a-zA-Z][a-zA-Z_]+)",
+          "captures": {"1": {"name": "entity.name.function.extension.swift"}},
+        },
+        {
+          "match": "(?<=enum\\s)([a-zA-Z][a-zA-Z_]+)",
+          "captures": {"1": {"name": "entity.name.type.enum.swift"}},
+        },
+        {
+          "match": "(?<=class\\s)([a-zA-Z][a-zA-Z_]+)",
+          "captures": {"1": {"name": "entity.name.class.swift"}},
+        },
+        {
+          "match": "(?<=import\\s)([a-zA-Z][a-zA-Z_]+)",
+          "captures": {"1": {"name": "entity.name.type.module.swift"}},
+        },
+        {
+          "match": "(?<=struct\\s)([a-zA-Z][a-zA-Z_]+)",
+          "captures": {"1": {"name": "entity.name.type.struct.swift"}},
+        },
+        {
+          "match": "\\b(func)\\s+([^\\t\\n\\x20\\x28]+)",
+          "captures": {
+            "1": {"name": "storage.type.function.swift"},
+            "2": {"name": "entity.name.function.swift"},
+          },
+        },
+      ]
+    }
+  }
+}

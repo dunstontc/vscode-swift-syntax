@@ -5,6 +5,7 @@
 Swift highlighting in VSCode sucks. This *might* make it a little bit better. 
 
 ## Reference
+- [oniguruma](https://github.com/kkos/oniguruma/blob/master/doc/RE)
 - [apple/swift](https://github.com/apple/swift) 
   - [apple/swift-corelibs-foundation](https://github.com/apple/swift-corelibs-foundation)
     - The Foundation Project, providing core utilities, internationalization, and OS independence 

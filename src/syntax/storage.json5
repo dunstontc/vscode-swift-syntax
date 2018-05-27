@@ -10,9 +10,13 @@
           "name": "storage.modifier.swift",
           "match": "\\b(final|internal|private|fileprivate|public|open|override|static|required|convenience)\\b"
         },
+        // {
+        //   "name": "storage.type.swift",
+        //   "match": "\\b(class|enum|extension|let|protocol|precedencegroup|struct|typealias|var)\\b"
+        // },
         {
           "name": "storage.type.swift",
-          "match": "\\b(class|enum|extension|let|protocol|precedencegroup|struct|typealias|var)\\b"
+          "match": "\\b(class|enum|extension|protocol|precedencegroup|struct|typealias)\\b"
         },
         {
           "name": "storage.type.swift",
