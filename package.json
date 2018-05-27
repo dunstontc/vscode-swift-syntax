@@ -1,35 +1,23 @@
 {
     "name": "vscode-swift-syntax",
     "displayName": "vscode-swift-syntax",
-    "description": "Syntax highlighting for Swift files.",
+    "description": "Syntax highlighting for Swift files. (WIP)",
     "version": "0.0.1",
     "publisher": "dunstontc",
     "repository": {
         "type": "git",
         "url": "https://github.com/dunstontc/vscode-swift-syntax.git"
     },
-    "bugs": {
-        "url": "https://github.com/dunstontc/vscode-swift-syntax/issues"
-    },
-    "scripts": {
-        "start": "gulp watch"
-    },
-    "engines": {
-        "vscode": "^1.20.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
+    "bugs": {"url": "https://github.com/dunstontc/vscode-swift-syntax/issues"},
+    "scripts": {"start": "gulp watch"},
+    "engines": {"vscode": "^1.20.0"},
+    "categories": ["Programming Languages"],
     "contributes": {
         "languages": [
             {
                 "id": "swift",
-                "aliases": [
-                    "swift"
-                ],
-                "swifts": [
-                    ".swift"
-                ],
+                "aliases": ["swift"],
+                "extensions": [".swift"],
                 "firstLine": "^/usr/bin/swift",
                 "configuration": "./language-configuration.json"
             }

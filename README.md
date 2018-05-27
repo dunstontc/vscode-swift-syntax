@@ -2,6 +2,8 @@
 [![GitHub issues](https://img.shields.io/github/issues/dunstontc/vscode-swift-syntax.svg)](https://github.com/dunstontc/vscode-swift-syntax/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/dunstontc/vscode-swift-syntax/blob/master/LICENSE) 
 
+Swift highlighting in VSCode sucks. This *might* make it a little bit better. 
+
 ## Reference
 - [apple/swift](https://github.com/apple/swift) 
   - [apple/swift-corelibs-foundation](https://github.com/apple/swift-corelibs-foundation)
