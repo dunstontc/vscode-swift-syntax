@@ -1,6 +1,9 @@
 # Change Log
 
 
+## 0.0.4
+- Improved variable match pattern.
+
 ## 0.0.3
 - General improvements.
 

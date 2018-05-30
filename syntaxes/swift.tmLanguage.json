@@ -333,7 +333,7 @@
                     "name": "variable.language.self.swift"
                 },
                 {
-                    "match": "(let|var)\\s([a-zA-Z0-9]+)(:?)\\s([a-zA-Z0-9]+)?",
+                    "match": "\\b(let|var)\\s([a-zA-Z0-9]+)(:?)\\s([a-zA-Z0-9]+)?",
                     "captures": {
                         "1": {
                             "name": "storage.type.swift"
