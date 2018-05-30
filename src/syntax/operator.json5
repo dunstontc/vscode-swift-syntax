@@ -8,7 +8,7 @@
         // },
         {
           "name": "keyword.operator.swift",
-          "match": "\\B[\\/=\\-+!*%<>&|^~\\?:\\[\\]]\\B"
+          "match": "\\B[\\/=\\-+!*%<>&|^~\\?:]\\B"
         },
         {
           "name": "keyword.operator.access.swift",

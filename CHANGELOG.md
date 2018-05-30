@@ -1,6 +1,9 @@
 # Change Log
 
 
+## 0.0.5
+- Improved operator highlighting
+
 ## 0.0.4
 - Improved variable match pattern.
 
